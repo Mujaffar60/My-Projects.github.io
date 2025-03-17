@@ -6,6 +6,7 @@ const msgEle = document.querySelector(".msg");
 const exchangeRateBtn = document.querySelector(".btn");
 
 const searchList = document.querySelector(".search-list");
+let expression = '';
 
 
 // Array to populate the select tags with these countries
@@ -219,7 +220,7 @@ const getExchangeRate = async () =>{
   const data = await response.json();
 
   const conversionRate = data.rates[toCurrency];
-  const convertedAmount = (amount * conversionRate);
+  const convertedAmount = (amount * conversionRate).toFixed(2);
 
   // msgEle.textContent = convertedAmount;
 msgEle.textContent = `${amount} ${fromCurrency} = ${convertedAmount} ${toCurrency}`;
@@ -229,7 +230,12 @@ exchangeRateBtn.addEventListener("click", getExchangeRate);
 fromCurrVal.addEventListener("change", getExchangeRate);
 toCurrVal.addEventListener("change", getExchangeRate);
 
+amountValue.addEventListener("input",()=>{
+  if(expression == ''){
+    msgEle.textContent ="1USD = 80INR";
+  }
 
+})
 
 
 // Showing countries from array to select tag

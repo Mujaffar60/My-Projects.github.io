@@ -1,0 +1,13 @@
+@media only screen and ( max-width: 600px ){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 85vh;
+        background-color: #f0f0f0;
+    }
+
+    .calculator{
+        width:600px;
+    }
+}
