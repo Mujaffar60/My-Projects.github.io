@@ -1,0 +1,18 @@
+@media only screen and (max-width: 600px) {
+
+    body{
+        height: 92vh;
+    }
+
+    .weather-container{
+        width:82%;
+    }
+    .details{
+        width: 100%;
+    }
+
+    #cityInput {
+        font-size: 16px;
+    }
+    
+}
