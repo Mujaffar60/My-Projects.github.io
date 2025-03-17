@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="currency-converter.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+
+
+<script src="https://kit.fontawesome.com/d6315721f3.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    
+     <div class="parent">
+    <div class="container">
+    <div class="heading">
+        <h3>Currency Converter</h2>
+    </div>
+    <form >
+        <div class="amount">
+        <p>Enter Amount</p>
+            <input type="number" value="1" class="amountVal" min="1">
+        </div>
+
+        <div class="dropdown">
+        
+        <div class="from">
+            <p>From</p>
+            <div class="selects">
+                
+                <img src="https://flagsapi.com/US/flat/64.png">
+                
+                <select name="from" class="from-currency">
+                    <!-- <option value="USD">USD</option>
+                    <option value="INR">INR</option> -->
+                </select>
+            </div>
+        </div>    
+        <i class="fa-solid fa-right-left"></i>
+ 
+        <div class="to">
+            <p>To</p>
+            <div class="selects">
+
+                <img src="https://flagsapi.com/IN/flat/64.png">
+
+                <select name="to" class="to-currency">
+                <!-- <option value="USD">USD</option>
+                <option value="INR">INR</option> -->
+                </select>
+            </div>
+        </div>
+        </div>
+        <div class="result" >
+            <p class="msg">1USD = 80INR</p>
+        </div>
+        
+    </form>
+    <button  class="btn"  >Get Exchange Rate</button>
+
+    <!-- <div class="search-lists">
+        <input type="text" class="search-list" placeholder="select country">
+    </div> -->
+</div>
+</div> 
+
+
+
+<script src="currency-converter.js"></script>
+<script src="codes.js"></script>
+</body>
+</html>
